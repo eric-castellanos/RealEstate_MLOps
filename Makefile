@@ -38,6 +38,10 @@ clean:
 lint:
 	flake8 src
 
+## Run Unit Tests using Pytest
+run_test:
+	pytest src/test/
+
 ## Upload Data to S3
 sync_data_to_s3:
 ifeq (default,$(PROFILE))
