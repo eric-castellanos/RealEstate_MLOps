@@ -4,4 +4,4 @@ COPY ./ ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["echo", "Dockerfile done running!!"]
+CMD ["python", "src/app/app.py"]
