@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9.12
+    commands:
+      - echo "Installing dependencies..."
+      - make requirements
+
+  build:
+    commands: 
+      - echo "Running tests..."
+      - make run_test
+
+  post_build:
+    commands:
+      - echo "Build process complete!"
